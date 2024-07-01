@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "domains",
+  "info": {
+    "singularName": "domain",
+    "pluralName": "domains",
+    "displayName": "Domain"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "domainName": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Available ",
+        "Registered",
+        "Expired"
+      ]
+    },
+    "registrationDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "expirationDate": {
+      "type": "datetime"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "creationAt": {
+      "type": "datetime"
+    },
+    "updateAt": {
+      "type": "datetime"
+    }
+  }
+}

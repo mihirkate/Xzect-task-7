@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "admin_user": {
+      "type": "string",
+      "required": true,
+      "target": "admin::user",
+      "relation": "oneToOne"
+    },
+    "orderNumber": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "hosting_plan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hosting-plan.hosting-plan"
+    },
+    "domain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::domain.domain"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Completed",
+        " Cancelled"
+      ]
+    },
+    "totalAmount": {
+      "type": "float"
+    },
+    "creationAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "updationAt": {
+      "type": "datetime"
+    }
+  }
+}

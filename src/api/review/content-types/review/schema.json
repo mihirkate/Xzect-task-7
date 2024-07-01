@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "content": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 1,
+      "required": true
+    },
+    "creationAt": {
+      "type": "datetime"
+    },
+    "updationAt": {
+      "type": "datetime"
+    }
+  }
+}

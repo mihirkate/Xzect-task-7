@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hosting_plans",
+  "info": {
+    "singularName": "hosting-plan",
+    "pluralName": "hosting-plans",
+    "displayName": "HostingPlan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hostingName": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "min": 5
+    },
+    "features": {
+      "type": "json"
+    },
+    "creationAt": {
+      "type": "datetime"
+    },
+    "updationAt": {
+      "type": "datetime"
+    }
+  }
+}

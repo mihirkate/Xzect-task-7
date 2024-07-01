@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "singularName": "payment",
+    "pluralName": "payments",
+    "displayName": "Payment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payment_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "amount": {
+      "type": "float"
+    },
+    "paymentMethod": {
+      "type": "enumeration",
+      "enum": [
+        "Credit Card",
+        "PayPal,",
+        "Bank Transfer"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "PendingStatus",
+        "CompletedStatus",
+        "FailedStatus"
+      ]
+    },
+    "transactionId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "creationAt": {
+      "type": "datetime"
+    },
+    "updationAt": {
+      "type": "datetime"
+    }
+  }
+}
