@@ -1,3 +1,22 @@
+
+# method GET->  http://localhost:1337/api/blog-posts
+![image](https://github.com/mihirkate/Xzect-task-7/assets/97501267/65237bf5-f977-40d7-8dbb-23ef4a904f89)
+
+# method GET->  http://localhost:1337/api/hosting-plans
+![image](https://github.com/mihirkate/Xzect-task-7/assets/97501267/87715790-c8c6-4e77-9f3e-c146ffcb3766)
+
+# method GET->  http://localhost:1337/api/domains
+![image](https://github.com/mihirkate/Xzect-task-7/assets/97501267/cdf1a3dd-2fa2-432e-8feb-789652e02b0c)
+
+
+# method GET->  http://localhost:1337/api/orders
+![image](https://github.com/mihirkate/Xzect-task-7/assets/97501267/85e32b74-8a27-4064-9570-e144f34f2ce2)
+# method GET-> http://localhost:1337/api/payments
+![image](https://github.com/mihirkate/Xzect-task-7/assets/97501267/f788a599-cbb7-4d90-b91a-6db7e2705114)
+# method GET-> http://localhost:1337/api/reviews
+![image](https://github.com/mihirkate/Xzect-task-7/assets/97501267/b71720d5-4adc-405a-a080-d0306b8c9d20)
+
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
